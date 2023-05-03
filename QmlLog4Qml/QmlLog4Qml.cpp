@@ -48,7 +48,7 @@ void outputMessage(QtMsgType type, const QMessageLogContext &context, const QStr
         message = msg;
     }
 
-    QFile file("log.txt");
+    QFile file("ryan_log4Qml.txt");
     file.open(QIODevice::WriteOnly | QIODevice::Append);
     QTextStream text_stream(&file);
     text_stream << message << "\r\n";
